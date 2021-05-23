@@ -1,0 +1,168 @@
+{%extends 'base.html'%}
+{%load blog_tags%}
+{%block content%}
+
+
+{%include 'components/header.html'%}
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-100">Wait !
+              <br class="hidden lg:inline-block">We are launching Soon.
+            </h1>
+            <div class="flex w-full md:justify-start justify-center items-end">
+              <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+                <label for="hero-field" class="leading-7 text-sm text-gray-100">Subscribe for news.</label>
+                <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-100 rounded text-base outline-none text-gray-900 py-1 px-3 leading-8">
+              </div>
+              <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Submit</button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="/static/img/product/prod.png">
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex flex-col text-center w-full mb-2">
+            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-100">QuixBoard</h1>
+         
+          </div>
+          <div class="flex flex-wrap w-full">
+            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Ask A question</h2>
+                  <p class="leading-relaxed">You can raise a question with quixboard.</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Timely Answers</h2>
+                  <p class="leading-relaxed">Answer within 3- days.</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Personal Message</h2>
+                  <p class="leading-relaxed">Share anything to your contacts.</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Private Answers</h2>
+                  <p class="leading-relaxed">You can hide answers from other users.</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Summarized Answer</h2>
+                  <p class="leading-relaxed">Many Answers merge in one answer.</p>
+                </div>
+              </div>
+            </div>
+            <img class="lg:w-3/5  object-center rounded-lg" src="/static/img/product/quixboard.svg" alt="step">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex flex-col text-center w-full mb-2">
+            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-100">Quizzer</h1>
+         
+          </div>
+          <div class="flex flex-wrap w-full">
+            <img class="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6 object-center rounded-lg" src="/static/img/product/quizzerb.svg" alt="step">
+            <div class="lg:w-2/5 ">
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Organize a Quiz</h2>
+                  <p class="leading-relaxed">You can organize a quiz in quizzer.</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Collect Money</h2>
+                  <p class="leading-relaxed">Collect Money for your Quiz</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Leaderboard</h2>
+                  <p class="leading-relaxed">Win prizes ,goodies and profile in public leaderboard </p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Private Quiz</h2>
+                  <p class="leading-relaxed">You can hide quiz from other users.</p>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+          <div class="flex flex-col text-center w-full mb-2">
+            <h1 class="sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-100">QuickCV</h1>
+         
+          </div>
+          <div class="flex flex-wrap w-full">
+            <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Templates </h2>
+                  <p class="leading-relaxed">30+ resumes and CV templates</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Portfolio</h2>
+                  <p class="leading-relaxed">Portfolio Website </p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">One Click Resume</h2>
+                  <p class="leading-relaxed">Complete your profile and one click resume</p>
+                </div>
+              </div>
+              <div class="flex relative p-5 bg-gray-800 shadow-2xl mb-2 border-l-4 border-indigo-500 rounded" >
+            
+                <div class="flex-grow pl-4">
+                  <h2 class="font-bold title-font text-base text-gray-100 mb-1 tracking-wider">Private Resume Sharing</h2>
+                  <p class="leading-relaxed">Private sharing of resume and portfolio</p>
+                </div>
+              </div>
+            </div>
+            <img class="lg:w-3/5  object-center rounded-lg" src="/static/img/product/CV.PNG" alt="step">
+          </div>
+        </div>
+      </section>
+
+{%include 'components/footer.html'%}
+
+{%endblock%}
+
+
+

@@ -1,0 +1,89 @@
+<header class="header">
+    <a href="{%url 'home'%}" class="header__logo">
+      <img src="/static/img/lolGoal.png" alt=""></a>
+
+    <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+
+    <nav class="nav" id="nav-menu">
+      <div class="nav__content bd-grid">
+        <a href="{%url 'home'%}" class="nav__fil">
+          <div class="nav__img">
+            <img src="/static/img/lolGoal.png" alt="">
+          </div>
+        </a>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="{%url 'home'%}" class="nav__link">HOME</a></li>
+
+            <li class="nav__item dropdown">
+              <a href="/project/" class="nav__link dropdown__link">
+              <span >PROJECTS</span>
+         
+            </li>
+         
+            <li class="nav__item dropdown">
+              <a href="/blog/" class="nav__link dropdown__link">
+              <span >BLOG</span>
+            
+
+            </li>
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">
+              <span >SERVICES</span>
+              <i class='bx bx-chevron-down dropdown__icon'></i></a>
+
+
+              <ul class="dropdown__menu">
+                <li class="dropdown__item"><a href="/students/" class="nav__link">
+               Student Space
+                </a></li>
+                <li class="dropdown__item"><a href="/meetings" class="nav__link">Events</a></li>
+            </ul>
+            </li>
+  
+            {%if user.is_authenticated %}
+            <li class="nav__item dropdown">
+              <a href="#" class="nav__link dropdown__link">
+                  <span class="text-green-500">{{user.username}}</span>
+                  <i class='bx bx-chevron-down dropdown__icon'></i></a>
+
+
+              <ul class="dropdown__menu">
+                  <li class="dropdown__item"><a href="{%url 'login_success'%}" class="nav__link">Account</a></li>
+                  <li class="dropdown__item"><a href="/account/profile/{{user.username}}" class="nav__link">Profile</a></li>
+                  <li class="dropdown__item"><a href="/account/profile/{{user.username}}" class="nav__link">Create project</a></li>
+                  <li class="dropdown__item"><a href="/account/profile/{{user.username}}" class="nav__link">Write a story</a></li>
+
+                  <li class="dropdown__item"><a href="{%url 'logout'%}" class="nav__link">
+                          <span class="text-red-600">Logout</span> </a></li>
+              </ul>
+          </li>
+           {%else %}
+           <a href="{%url 'login'%}">
+           <button type="button"
+                class="ml-2 inline-flex text-white bg-purple-600 border-0 py-2 px-6 focus:outline-none   hover:bg-purple-700 rounded text-lg mb-2">
+                
+                
+                LOGIN</button>
+              </a>
+
+            <div>
+
+              <a href="{%url 'register'%}">
+                <button type="button"
+                     class="ml-2 inline-flex text-white bg-purple-600 border-0 py-2 px-6 focus:outline-none   hover:bg-purple-700 rounded text-lg mb-2">
+                     REGISTER</button>
+                   </a>
+     
+            </div>
+
+          {%endif %}
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>

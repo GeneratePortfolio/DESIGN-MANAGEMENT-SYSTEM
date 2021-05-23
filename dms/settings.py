@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'designs',
+    'taggit',
+    'authentication',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +59,7 @@ ROOT_URLCONF = 'dms.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +123,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_URL	=	'/media/' 
+MEDIA_ROOT	=	os.path.join(BASE_DIR,	'media/')
+LOGIN_URL	='login' 
+LOGOUT_URL	='logout'
+LOGIN_REDIRECT_URL= 'home'
+LOGOUT_REDIRECT_URL= 'home'
+EMAIL_BACKEND	=	'django.core.mail.backends.console.EmailBackend'
+
+STATIC_URL = '/static/'
+MEDIA_URL	=	'/media/' 
+MEDIA_ROOT	=	os.path.join(BASE_DIR,	'media/')
+LOGIN_URL	='login' 
+LOGOUT_URL	='logout'
+LOGIN_REDIRECT_URL= 'home'
+LOGOUT_REDIRECT_URL= 'home'
+EMAIL_BACKEND	=	'django.core.mail.backends.console.EmailBackend'
+
+
+
+
+AUTHENTICATION_BACKENDS= [
+    'django.contrib.auth.backends.ModelBackend',
+    'authentication.authentication.EmailAuthBackend',
+]

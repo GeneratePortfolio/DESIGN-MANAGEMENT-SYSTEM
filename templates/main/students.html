@@ -1,0 +1,110 @@
+{%extends 'base.html' %}
+
+{%block content %}
+{%include 'components/header.html' %}
+
+<section class="text-gray-400 bg-gray-900 body-font" style="background-image: url('/static/img/studban.svg'); background-repeat: no-repeat;">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-semibold text-white">Stundet Space 
+          <br class="hidden lg:inline-block">Services for Students
+        </h1>
+        
+        <div class="flex justify-center">
+          <button class="inline-flex text-gray-900 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-gray-100 rounded text-lg font-semibold">See More</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+        <img class="object-cover object-center rounded transform scale-50" alt="hero" src="/static/img/studban3.svg">
+      </div>
+  
+    </div>
+  </section>
+
+
+  <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-4xl text-3xl font-semibold title-font mb-2 text-white">SERVICES</h1>
+  
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full" >
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden shadow-lg bg-indigo-600">
+            <h1 class="text-5xl text-gray-100 pb-4 mb-4  leading-none">Blog</h1>
+         
+         
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden" style="background-image: url('/static/img/ban3.svg'); border-radius: 3%;">
+            <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">Upcoming</span>
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4">
+              <span>Courses</span>
+            </h1>
+           
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg  flex flex-col relative overflow-hidden" style="background-image: url('/static/img/studban2svg.svg'); border-radius: 3%;">
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 ">
+              <span>Projects</span>
+            </h1>
+           
+          
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden" style="background-image: url('/static/img/studban2svg.svg'); border-radius: 3%;">
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 ">
+              <span>Startup</span>
+            </h1>
+         
+           
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full" >
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden shadow-lg bg-indigo-600">
+            <h1 class="text-5xl text-gray-100 pb-4 mb-4  leading-none">Partner</h1>
+         
+         
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden" style="background-image: url('/static/img/ban3.svg'); border-radius: 3%;">
+            <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">Upcoming</span>
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4">
+              <span>Jobhunt</span>
+            </h1>
+           
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg  flex flex-col relative overflow-hidden" style="background-image: url('/static/img/studban2svg.svg'); border-radius: 3%;">
+            <span class="bg-green-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">Upcoming</span>
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 ">
+              <span>Quizzer</span>
+            </h1>
+           
+          
+          </div>
+        </div>
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+          <div class="h-full p-6 rounded-lg flex flex-col relative overflow-hidden bg-green-800" >
+            <h1 class="text-5xl text-white leading-none flex items-center pb-4 mb-4 ">
+              <span>Advertise</span>
+            </h1>
+         
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{%include  'components/footer.html'%}
+
+{%endblock %}
+
+
+
